@@ -26,5 +26,5 @@ app.get("/health", () => {
 app.register(getRoomsRoute);
 
 app.listen({ port: env.PORT }).then(() => {
-  console.log(`JA POSSO COLOCAR NO CURRICULO? :${env.PORT}`);
+  console.log(`Server is running, PORT: ${env.PORT}`);
 });
