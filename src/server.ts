@@ -20,7 +20,7 @@ app.setValidatorCompiler(validatorCompiler);
 app.withTypeProvider<ZodTypeProvider>();
 
 app.get("/health", () => {
-  return { status: "ok" };
+  return { status: 200, message: "OK" };
 });
 
 app.register(getRoomsRoute);
