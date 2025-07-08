@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  agents-project-pg:
+    image: pgvector/pgvector:pg17
+    environment:
+      POSTGRES_USER: docker
+      POSTGRES_PASSWORD: docker
+      POSTGRES_DB: agents_project
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./docker/setup.sql:/docker-entrypoint-initdb.d/setup.sql
