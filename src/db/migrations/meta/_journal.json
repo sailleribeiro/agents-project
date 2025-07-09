@@ -8,6 +8,13 @@
       "when": 1752000005031,
       "tag": "0000_rapid_pepper_potts",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1752067612078,
+      "tag": "0001_narrow_ego",
+      "breakpoints": true
     }
   ]
 }
