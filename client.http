@@ -16,7 +16,6 @@ GET {{baseUrl}}/rooms
 # Create room
 # @name createRoom
 POST {{baseUrl}}/room
-Accept: application/json
 Content-Type: application/json
 
 {
@@ -26,10 +25,22 @@ Content-Type: application/json
 
 ###
 
-@roomId = {{getRooms.response.body.$.[0].id}}
+@roomId = {{createRoom.response.body.$.roomId}}
 
 ###
 
 # GET room by ID
 # @name getRoomQuestions
 GET {{baseUrl}}/room/{{roomId}}/questions
+
+
+###
+
+# Create question
+# @name createQuestion
+POST {{baseUrl}}/room/{{roomId}}/questions
+Content-Type: application/json
+
+{
+    "question": "Oque é HTTP? teste via api"
+}
