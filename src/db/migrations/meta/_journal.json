@@ -15,6 +15,20 @@
       "when": 1752067612078,
       "tag": "0001_narrow_ego",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1752243688040,
+      "tag": "0002_busy_monster_badoon",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1752245611135,
+      "tag": "0003_public_warstar",
+      "breakpoints": true
     }
   ]
 }
